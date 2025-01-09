@@ -1,0 +1,130 @@
+:root {
+  /* color */
+  --white-color: #fff;
+  --dark-color: #252525;
+  --primary-color: #457b9d;
+  --secondary-color: #e67e22;
+  /* #ACC8E5 */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+}
+
+/* HEADER */
+.section-header {
+  height: 100vh;
+  /* bagaian section ini di gunakan utnuk menambahkan background image */
+
+  background-size: cover;
+  background-position: 10%;
+  position: relative;
+  margin-bottom: 9.6rem;
+
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.1),
+      rgba(34, 34, 34, 0.5)
+    ),
+    url(img/background-sekolah.jpeg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f8ff;
+  height: 7.6rem;
+  padding: 0 4.8rem;
+  gap: 4.8rem;
+  position: relative;
+}
+
+.nav-img {
+  display: flex;
+  gap: 0.8rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.logo {
+  height: 4.8rem;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* NAVIGATION */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  padding-left: 0;
+  gap: 3rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #112a46;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: red;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #457b9d;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #1098ad;
+}
+
+.heading-primary {
+  margin-top: 0;
+  font-size: 4.2rem;
+  line-height: 1;
+  margin-bottom: 3rem;
+  margin-top: -0.5rem;
+}
+
+/* HERO-SECTION  */
+.hero-text {
+  color: #ebf5fe;
+  padding: 6.4rem 6.4rem 2.4rem 6.4rem;
+  margin-bottom: 4.8rem;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.05;
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: #0f2e4881; */
+}
