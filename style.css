@@ -27,6 +27,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
 body {
   /* font-family: "Poppins", sans-serif; */
@@ -291,11 +296,6 @@ form input {
   box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.05);
 }
 
-.form-control {
-  /* display: block; */
-  /* width: 100%; */
-}
-
 form button {
   background: #2c73d2;
   color: #fff;
@@ -422,6 +422,10 @@ section {
   margin-bottom: 50px;
 }
 
+.section-news-area .news-thumbnail {
+  padding: 20px 0 0;
+}
+
 .news-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -440,12 +444,62 @@ section {
 .news-body {
   position: relative;
 }
+/* 
+.news-thumbnail {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+} */
 
 .news-thumbnail img {
   width: 100%;
-  height: auto;
-  max-width: 100%;
+  height: 100%;
   border-radius: 8px;
   object-fit: cover;
   transition: transform 0.3s;
+}
+.news-thumbnail .date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 10;
+  background-color: #002147;
+  color: var(--secondary-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.news-thumbnail .date span.tgl {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: -10px;
+}
+
+.news-thumbnail .date span.tgl-desc {
+  font-size: 10px;
+}
+.section-news-area .news-items .single-item {
+  margin-bottom: 30px;
+}
+
+/* .section-news-area .news-items .item .news-content .single-item {
+  background: #fff;
+} */
+
+.section-news-area .news-content p {
+  font-size: 14px;
+  color: #777777;
+  line-height: 24px;
+}
+
+.section-news-area .news-body .news-admin {
+  margin-bottom: 50px;
+}
+
+.section-news-area .news-items .thumb {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
