@@ -35,7 +35,7 @@
 }
 
 body {
-  font-family: "Monserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1;
   color: #444;
@@ -271,7 +271,7 @@ body {
   margin-top: -0.5rem;
   font-weight: 700;
   text-transform: none;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
 }
 .heading-title {
   font-size: 4.2rem;
@@ -581,6 +581,11 @@ a {
   padding-top: 1rem;
 }
 
+.news-admin .admin-icon {
+  color: #002147;
+  font-size: 2rem;
+}
+
 .more-button {
   text-align: center;
 }
@@ -621,18 +626,70 @@ a {
   margin-bottom: 1rem;
 }
 
+.container-ekstra {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.title .heading-ekstra {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.title .heading-ekstra:after {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 3px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--secondary-color);
+}
+
+.section-top-cat-area .ekstra-body-items .item.pramuka {
+  background-color: #307ad5;
+}
+.section-top-cat-area .ekstra-body-items .item.voli {
+  background-color: #33707b;
+}
+
+.section-top-cat-area .ekstra-body-items .item.pmr {
+  background-color: #ea2b2b;
+}
+
+.section-top-cat-area .ekstra-body-items .item.pks {
+  background-color: #9e497f;
+}
+
+.section-top-cat-area .ekstra-body-items .item.geguritan {
+  background-color: #e948ae;
+}
+
+.section-top-cat-area .ekstra-body-items .item.bola {
+  background-color: #f9bd44;
+}
+
+.section-top-cat-area .ekstra-body-items .item.budaya {
+  background-color: #38a674;
+}
+
+.section-top-cat-area .ekstra-body-items .item.mading {
+  background-color: #19a340;
+}
+
 .ekstra-body-items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.6rem;
+  gap: 2rem;
   padding: 1.6rem;
 }
-/* .ekstra-section {
-  font-size: 4rem;
-  line-height: 1.2;
-  margin-bottom: 1rem; */
-
-/* margin-bottom: 3.2rem; */
 
 .ekstra-section .ekstra-body-items .item {
   height: 100%;
@@ -646,8 +703,26 @@ a {
 .ekstra-body-items .item i {
   color: #fff;
   margin: auto auto 1rem;
-  vertical-align: top;
 }
+
+/* .ekstra-body-item .item a {
+  padding: 50px 20px;
+} */
+
+.top-cat-items .item a {
+  display: block;
+}
+
+.top-cat-items .item .info {
+  padding-left: 1rem;
+  position: relative;
+}
+
+/* .top-cat-items .item i,
+.top-cat-items .item .info {
+  display: table-cell;
+  vertical-align: top;
+} */
 
 .ekstra-body-items .item a::after {
   border-radius: 5px;
@@ -666,59 +741,25 @@ a {
   margin-bottom: 10px;
   text-transform: capitalize;
   transition: all 0.35s ease-in-out;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
-.section-top-cat-area .ekstra-body-items .item.pramuka {
-  background-color: #307ad5;
-}
-.section-top-cat-area .ekstra-body-items .item.voli {
-  background-color: #1ec1d9;
+.ekstra-body-items .ekstra-item {
 }
 
-.section-top-cat-area .ekstra-body-items .item.pmr {
-  background-color: #ea2b2b;
+.material-icons {
+  font-size: 3.8rem;
+  color: #fff;
+  margin: 1rem;
+  transition: all 0.35s ease-in-out;
+  font-weight: 400;
 }
 
-.section-top-cat-area .ekstra-body-items .item.pks {
-  background-color: #9e497f;
-}
-
-.section-top-cat-area .ekstra-body-items .item.mejaitan {
-  background-color: #e948ae;
-}
-
-.section-top-cat-area .ekstra-body-items .item.bola {
-  background-color: #f9bd44;
-}
-
-.section-top-cat-area .ekstra-body-items .item.budaya {
-  background-color: #3ae89a;
-}
-
-.section-top-cat-area .ekstra-body-items .item.mading {
-  background-color: #19a340;
-}
-
-.title .heading-ekstra {
-  position: relative;
-  display: inline-block;
-  margin: 0 auto;
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: var(--primary-color);
-  font-weight: 600;
-}
-.title .heading-ekstra:after {
-  position: absolute;
-  content: "";
-  width: 60%;
-  height: 3px;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--secondary-color);
-}
+/* .ekstra-item .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
 /* PRESTASI TERBARU SECTION */
 
