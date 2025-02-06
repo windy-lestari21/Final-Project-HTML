@@ -508,6 +508,10 @@ a {
   object-fit: cover;
   transition: transform 0.3s;
 }
+
+.news-img:hover {
+  transform: scale(1.1);
+}
 .news-thumbnail .date {
   position: absolute;
   bottom: 10px;
@@ -581,20 +585,24 @@ a {
   padding-top: 1rem;
 }
 
+.more-button {
+  text-align: center;
+}
+
 .news-admin .admin-icon {
   color: #002147;
   font-size: 2rem;
 }
-
-.more-button {
-  text-align: center;
+.news-content .more-icon .material-icons {
+  color: #333;
+  font-size: 2rem;
 }
 
 .button {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 .btn {
   display: inline-block;
@@ -608,7 +616,7 @@ a {
   border-radius: inherit;
   overflow: hidden;
   cursor: pointer;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 4rem;
 }
 
 .btn-theme.border {
@@ -627,7 +635,7 @@ a {
 }
 
 .container-ekstra {
-  max-width: 120rem;
+  max-width: 115rem;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
@@ -668,7 +676,7 @@ a {
   background-color: #9e497f;
 }
 
-.section-top-cat-area .ekstra-body-items .item.geguritan {
+.section-top-cat-area .ekstra-body-items .item.atletik {
   background-color: #e948ae;
 }
 
@@ -687,8 +695,8 @@ a {
 .ekstra-body-items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  padding: 1.6rem;
+  gap: 2.4rem;
+  padding: 1.8rem;
 }
 
 .ekstra-section .ekstra-body-items .item {
@@ -718,12 +726,6 @@ a {
   position: relative;
 }
 
-/* .top-cat-items .item i,
-.top-cat-items .item .info {
-  display: table-cell;
-  vertical-align: top;
-} */
-
 .ekstra-body-items .item a::after {
   border-radius: 5px;
   content: "";
@@ -744,11 +746,8 @@ a {
   font-size: 1.4rem;
 }
 
-.ekstra-body-items .ekstra-item {
-}
-
-.material-icons {
-  font-size: 3.8rem;
+.ekstra-item .item a {
+  font-size: 3.2rem;
   color: #fff;
   margin: 1rem;
   transition: all 0.35s ease-in-out;
@@ -764,16 +763,18 @@ a {
 /* PRESTASI TERBARU SECTION */
 
 .prestasi-section {
-  background-color: var(--primary-color);
   padding: 4.8rem 0 9.4rem 0;
 }
 
+.container-prestasi {
+  max-width: 90rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
 .heading-prestasi {
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
-
-  /* margin-bottom: 3.2rem; */
 }
 
 .title .heading-prestasi {
@@ -782,7 +783,7 @@ a {
   margin: 0 auto;
   font-size: 3rem;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--primary-color);
   font-weight: 600;
 }
 .title .heading-prestasi:after {
@@ -795,3 +796,64 @@ a {
   transform: translateX(-50%);
   background-color: var(--secondary-color);
 }
+
+.prestasi-items {
+  display: grid;
+  gap: 3.2rem;
+}
+
+.prestasi {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  row-gap: 3.2rem;
+  column-gap: 2.4rem;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.prestasi-img-box {
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+}
+
+.prestasi-img {
+  display: block;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.prestasi-img:hover {
+  transform: scale(1.1);
+}
+
+.prestasi-caption .prestasi-heading {
+  color: #002147;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.prestasi-caption .prestasi-desc .read-more {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-right: 2.4rem;
+  color: #fff;
+}
+
+.read-more {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prestasi-date {
+  font-size: 1rem;
+}
+
+.prestasi-ietms .btn:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: var(--secondary-color);
+}
+
+/* Galeri-section */

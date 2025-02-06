@@ -21,6 +21,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    
  
 
     <link rel="stylesheet" href="style.css" />
@@ -184,7 +186,7 @@
               <div class="item">
                 <div class="thumb news-thumbnail">
                   <a href="#">
-                    <img src="img/pgri.jpeg" alt="HUT PGRI" />
+                    <img class="news-img" src="img/pgri.jpeg" alt="HUT PGRI" />
                   </a>
                   <div class="date">
                     <h4 class="heading-tertiary">
@@ -204,19 +206,14 @@
                       Selamat untuk siswa/siswi kelas XII. Semoga semakin sukses
                       kedepannya klik gambar DIBAWAH untuk melihat SK
                       Kelulusan...
-                      <a href="#">
-                      </p>
+                    </p>
+                    <a class="more-icon" href="#">
                       Read More
-                      <span class="icon-read-more">
-                        keyboard_double_arrow_right
-                      </span>
+                      <i class="fas fa-angle-double-right"></i>
                     </a>
                   </div>
                   <div class="news-admin">
-                    <span class="material-icons admin-icon">
-                      person
-                    </span>
-                    <p>admin</p>
+                    <i class="fas fa-user">Admin</i>
                   </div>
                 </div>
               </div>
@@ -226,7 +223,7 @@
               <div class="item">
                 <div class="thumb news-thumbnail">
                   <a href="#">
-                    <img src="img/pgri.jpeg" alt="HUT PGRI" />
+                    <img class="news-img" src="img/pgri.jpeg" alt="HUT PGRI" />
                   </a>
                   <div class="date">
                     <h4 class="heading-tertiary">
@@ -264,7 +261,7 @@
               <div class="item">
                 <div class="thumb news-thumbnail">
                   <a href="#">
-                    <img src="img/mkks-smp.jpeg" alt="HUT PGRI" />
+                    <img class="news-img" src="img/mkks-smp.jpeg" alt="HUT PGRI" />
                   </a>
                   <div class="date">
                     <h4 class="heading-tertiary">
@@ -302,7 +299,7 @@
               <div class="item">
                 <div class="thumb news-thumbnail">
                   <a href="#">
-                    <img src="img/latdas-osis.jpeg" alt="HUT PGRI" />
+                    <img class="news-img" src="img/latdas-osis.jpeg" alt="HUT PGRI" />
                   </a>
                   <div class="date">
                     <h4 class="heading-tertiary">
@@ -343,7 +340,7 @@
               <div class="item">
                 <div class="thumb news-thumbnail">
                   <a href="#">
-                    <img src="img/pgri.jpeg" alt="HUT PGRI" />
+                    <img class="news-img" src="img/pgri.jpeg" alt="HUT PGRI" />
                   </a>
                   <div class="date">
                     <h4 class="heading-tertiary">
@@ -382,7 +379,7 @@
               <div class="item">
                 <div class="thumb news-thumbnail">
                   <a href="#">
-                    <img src="img/literasi.jpeg" alt="HUT PGRI" />
+                    <img class="news-img" src="img/literasi.jpeg" alt="HUT PGRI" />
                   </a>
                   <div class="date">
                     <h4 class="heading-tertiary">
@@ -409,7 +406,7 @@
                   </div>
                   <div class="news-admin">
                     <span>
-                      <i class="fas fa-user">Admin</i>
+                      <i class="fas fa-user">admin</i>
                     </span>
                   </div>
                 </div>
@@ -435,9 +432,10 @@
               <div class=" col-md-3 ekstra-item" style="height: 143px;">
                 <div class="item pramuka">
                   <a href="#">
-                    <span class="material-icons">
+                    <!-- <span class="material-icons">
                       bungalow
-                      </span>
+                      </span> -->
+                      <i class="fa-solid fa-tents"></i>
                     <div class="info">
                       <h4 class="subheading-ekstra">Pramuka</h4>
                     </div>
@@ -448,9 +446,10 @@
               <div class=" col-md-3 ekstra-item" style="height: 143px;">
                 <div class="item pmr">
                   <a href="#">
-                    <span class="material-icons">
+                    <!-- <span class="material-icons">
                       medical_services
-                      </span>
+                      </span> -->
+                      <i class="fa-solid fa-kit-medical"></i>
                     <div class="info">
                       <h4 class="subheading-ekstra">Palang Merah Remaja (PMR)</h4>
                     </div>
@@ -461,9 +460,7 @@
               <div class=" col-md-3 ekstra-item" style="height: 143px;">
                 <div class="item pks">
                   <a href="#">
-                    <span class="material-icons">
-                      groups
-                      </span>
+                    <i class="fa-solid fa-people-group"></i>
                     <div class="info">
                       <h4 class="subheading-ekstra">Patroli Keamanan Sekolah (PKS) </h4>
                     </div>
@@ -474,9 +471,7 @@
               <div class=" col-md-3 ekstra-item" style="height: 143px;">
                 <div class="item voli">
                   <a href="#">
-                    <span class="material-icons">
-                      sports_volleyball
-                      </span>
+                    <i class="fa-solid fa-volleyball"></i>
                     <div class="info">
                       <h4 class="subheading-ekstra">Voli</h4>
                     </div>
@@ -485,13 +480,11 @@
               </div>
 
               <div class=" col-md-3 ekstra-item" style="height: 143px;">
-                <div class="item geguritan">
+                <div class="item atletik">
                   <a href="#">
-                    <span class="material-icons">
-                      interpreter_mode
-                      </span>
+                    <i class="fa-solid fa-person-running"></i>
                     <div class="info">
-                      <h4 class="subheading-ekstra">Geguritan</h4>
+                      <h4 class="subheading-ekstra">Atletik</h4>
                     </div>
                   </a>
                 </div>
@@ -500,9 +493,7 @@
               <div class=" col-md-3 ekstra-item" style="height: 143px;">
                 <div class="item bola">
                   <a href="#">
-                    <span class="material-icons">
-                      sports_soccer
-                      </span>
+                      <i class="fa-regular fa-futbol"></i>
                     <div class="info">
                       <h4 class="subheading-ekstra">Sepak bola & Futsal</h4>
                     </div>
@@ -513,9 +504,7 @@
               <div class=" col-md-3 ekstra-item" style="height: 143px;">
                 <div class="item budaya">
                   <a href="#">
-                    <span class="material-icons">
-                      sports_gymnastics
-                      </span>
+                    <i class="fa-solid fa-wand-sparkles"></i>
                     <div class="info">
                       <h4 class="subheading-ekstra">Tari & Tabuh</h4>
                     </div>
@@ -526,7 +515,7 @@
               <div class=" col-md-3 ekstra-item" style="height: 143px;">
                 <div class="item mading">
                   <a href="#">
-                    <span class="material-icons">auto_stories</span>
+                    <i class="fa-solid fa-book"></i>
                     <div class="info">
                       <h4 class="subheading-ekstra">Mading</h4>
                     </div>
@@ -540,11 +529,69 @@
       </div>
     </section>
 
+
+    <!-- PRESTASI TERBARU -->
     <section class="prestasi-section">
-      <div class="container">
+      <div class="container-prestasi">
         <div class="title">
           <h2 class="heading-prestasi">Prestasi Terbaru</h2>
         </div>
+
+        <div class="prestasi-items">
+          <div class="prestasi">
+            <div class="prestasi-img-box">
+              <img class="prestasi-img" src="img/literasi.jpeg" alt="Prestasi 1" />
+            </div>
+            <div class="prestasi-caption">
+              <h3 class="prestasi-heading">Prestasi 1</h3>
+                <p class="prestasi-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit non ipsum eleifend tempus.</p>
+                <a class="read-more" href="#">Read more</a>
+                  <p class="prestasi-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>12 December 2024</span>
+                  </p>
+                  <hr>
+            </div>
+          </div>
+          
+          <div class="prestasi">
+            <div class="prestasi-img-box">
+              <img class="prestasi-img" src="img/literasi.jpeg" alt="Prestasi 1" />
+            </div>
+            <div class="prestasi-caption">
+              <h3 class="prestasi-heading">Kegiatan Lomba Nyurat Aksara Bali</h3>
+                <p class="prestasi-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec velit non ipsum eleifend tempus.</p>
+                <a class="read-more" href="#">Read more</a>
+                  <p class="prestasi-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>12 December 2024</span>
+                  </p>
+                  <hr>
+            </div>
+          </div>
+
+          <div class="prestasi">
+            <div class="prestasi-img-box">
+              <img class="prestasi-img" src="img/literasi.jpeg" alt="Prestasi 1" />
+            </div>
+            <div class="prestasi-caption">
+              <h3 class="prestasi-heading">Juara Harapan 3 Lomba Futsal</h3>
+                <p class="prestasi-desc">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempora nihil sit quas veniam consectetur id, dignissimos voluptas modi iure maiores pariatur praesentium voluptatum dolorem! Maiores atque velit sapiente ea? sit amet, consectetur adipiscing elit. Sed nec velit non ipsum eleifend tempus.</p>
+                <a class="read-more" href="#">Read more</a>
+                  <p class="prestasi-date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>12 December 2024</span>
+                  </p>
+                  <hr>
+            </div>
+          </div>
+
+          <div class="more-button button">
+            <a href="#" class="btn btn-theme border btn-md">Tampilkan Semua Prestasi</a>
+          </div>
+        </div>
+
+
       </div>
     </section>
   </body>
