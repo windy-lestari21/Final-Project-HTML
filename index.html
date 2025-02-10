@@ -11,8 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:opsz,wght@14..32,100..900&family=Miniver&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-    
     
     <link
       rel="stylesheet"
@@ -21,6 +19,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    rel="stylesheet"
+  />
 
     
  
@@ -51,7 +54,7 @@
               </a>
               <div class="dropdown__menu">
                 <ul>
-                  <li><a href="#">Profil Kepala Sekolah</a></li>
+                  <li><a href="#">Sambutan Kepala Sekolah</a></li>
                   <li><a href="#">Visi Misi Sekolah</a></li>
                   <li><a href="#">Sarana dan Prasarana</a></li>
                   <li><a href="#">Profil Guru dan Pegawai</a></li>
@@ -120,7 +123,7 @@
     </section>
     <!-- Profil & Sambutan Kepala Sekolah -->
     <section class="sambutan-section">
-      <div class="container">
+      <div class="container container-sambutan">
         <div class="principal">
           <div class="principal-text-box">
             <h2 class="sambutan-heading-secondary">Sambutan Kepala Sekolah</h2>
@@ -174,6 +177,34 @@
       </div>
     </section>
 
+    <!-- VISI DAN MISI -->
+     <!-- <section class="visi-misi-section">
+      <div class="container-info">
+        <div class="title">
+          <h2 class="heading-info">Visi dan Misi</h2>
+        </div>
+        <div class="content-visi-misi">
+          <div class="detail-info">
+            <img class="img-info"
+            src="img/literasi.jpeg"
+            alt="Visi SMPN 2 BATURITI"/>
+
+              <div class="visi">
+                <p class="info-title">Visi</p>
+                <ul>
+                  <li class="list-visi">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Terwujudnya Peserta Didik yang Berbudi Pekerti Luhur, Unggul dalam Prestasi, Terampil serta Ramah lingkungan</span>
+                  </li>
+                </ul>
+            </div>
+          </div>
+  
+        </div>
+
+      </div>
+     </section> -->
+
     <!-- BERITA TERBARU -->
     <section class="news-section section-news-area">
       <div class="container container-news-section">
@@ -199,7 +230,7 @@
                   <div class="news-content">
                     <a href="#">
                       <h3 class="sub-heading">
-                        Gelorakan Bela Negara untuk Indonesia Maju
+                        Kemeriahan Para Guru Edisi Tukar Kado Dalam Memperingati HUT PGRI ke-76
                       </h3>
                     </a>
                     <p class="news-text">
@@ -412,6 +443,7 @@
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
 
@@ -425,16 +457,13 @@
     <section class="ekstra-section section-top-cat-area">
       <div class="container-ekstra">
         <div class="title">
-          <h2 class="heading-ekstra">Extrakurikuler</h2>
+          <h2 class="heading-ekstra">Ekstrakurikuler</h2>
         </div>
           <div class="ekstra-body">
             <div class="top-cat-items text-light ekstra-body-items">
               <div class=" col-md-3 ekstra-item" style="height: 143px;">
                 <div class="item pramuka">
                   <a href="#">
-                    <!-- <span class="material-icons">
-                      bungalow
-                      </span> -->
                       <i class="fa-solid fa-tents"></i>
                     <div class="info">
                       <h4 class="subheading-ekstra">Pramuka</h4>
@@ -446,9 +475,6 @@
               <div class=" col-md-3 ekstra-item" style="height: 143px;">
                 <div class="item pmr">
                   <a href="#">
-                    <!-- <span class="material-icons">
-                      medical_services
-                      </span> -->
                       <i class="fa-solid fa-kit-medical"></i>
                     <div class="info">
                       <h4 class="subheading-ekstra">Palang Merah Remaja (PMR)</h4>
@@ -522,8 +548,6 @@
                   </a>
                 </div>
               </div>
-
-
             </div>
           </div>
       </div>
@@ -585,14 +609,143 @@
                   <hr>
             </div>
           </div>
-
           <div class="more-button button">
             <a href="#" class="btn btn-theme border btn-md">Tampilkan Semua Prestasi</a>
           </div>
         </div>
-
-
       </div>
     </section>
+
+    <!-- Guru dan Staff TU SECTION -->
+    <section class="guru-section">
+      <div class="container-guru-section">
+        <div class="title">
+          <h2 class="heading-guru">Guru dan Staff Tata Usaha</h2>
+        </div>
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+
+       
+          <div class="splide__track img-box">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img class="splide__img"
+                  src="img/Guru & Staff/5a8a78cbb06e0.jpg"
+                  alt="Kepala Sekolah">
+                <div class="info-title">
+                  <h4 class="name">Wiradnyana</h4>
+                  <p>Agama</p>
+                </div>
+              </li>
+            
+              <li class="splide__slide">
+                <img class="splide__img"
+                  src="img/Guru & Staff/guru.jpg"
+                  alt="Kepala Sekolah">
+                <div class="info-title">
+                  <h4 class="name">Wiradnyana</h4>
+                  <p>Agama</p>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <img class="splide__img"
+                  src="img/Guru & Staff/guru.jpg"
+                  alt="Kepala Sekolah">
+            
+                <div class="info-title">
+                  <h4 class="name">Wiradnyana</h4>
+                  <p>Agama</p>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <img class="splide__img"
+                  src="img/Guru & Staff/guru.jpg"
+                  alt="Kepala Sekolah">
+            
+                <div class="info-title">
+                  <h4 class="name">Wiradnyana</h4>
+                  <p>Agama</p>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <img class="splide__img"
+                  src="img/Guru & Staff/guru.jpg"
+                  alt="Kepala Sekolah">
+    
+                <div class="info-title">
+                  <h4 class="name">Wiradnyana</h4>
+                  <p>Agama</p>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <img class="splide__img"
+                  src="img/Guru & Staff/guru.jpg"
+                  alt="Kepala Sekolah">
+      
+                <div class="info-title">
+                  <h4 class="name">Wiradnyana</h4>
+                  <p>Agama</p>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <img class="splide__img"
+                  src="img/Guru & Staff/guru.jpg"
+                  alt="Kepala Sekolah">
+        
+                <div class="info-title">
+                  <h4 class="name">Wiradnyana</h4>
+                  <p>Agama</p>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <img class="splide__img"
+                  src="img/Guru & Staff/guru.jpg"
+                  alt="Kepala Sekolah">
+          
+                <div class="info-title">
+                  <h4 class="name">Wiradnyana</h4>
+                  <p>Agama</p>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <img class="splide__img"
+                  src="img/Guru & Staff/guru.jpg"
+                  alt="Kepala Sekolah">
+            
+                <div class="info-title">
+                  <h4 class="name">Wiradnyana</h4>
+                  <p>Agama</p>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <img class="splide__img"
+                  src="img/Guru & Staff/guru.jpg"
+                  alt="Kepala Sekolah">
+              
+                <div class="info-title">
+                  <h4 class="name">Wiradnyana</h4>
+                  <p>Agama</p>
+                </div>
+              </li>
+
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+       
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script defer src="style.js"></script>
   </body>
 </html>
