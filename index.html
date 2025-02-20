@@ -27,6 +27,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="queries.css" />
     <link rel="icon" href="img/logo.jpg" />
     <title>SMP NEGERI 2 BATURITI</title>
   </head>
@@ -42,7 +43,7 @@
           <a href="#" class="logo-text">SMPN 2 BATURITI</a>
         </div>
 
-        <nav class="main-nav">
+        <nav class="main-nav navbar-right">
           <ul class="main-nav-list">
             <li><a class="main-nav-link" href="#">Home</a></li>
             <li class="dropdown">
@@ -99,14 +100,18 @@
             <li><a class="main-nav-link nav-cta" href="#">Kontak</a></li>
           </ul>
         </nav>
+        <button class="btn-mobile-nav">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
     </header>
 
     <section class="hero-section">
       <div class="hero-text">
-        <h1 class="heading-selamat-datang">
+        <h1 class="heading-primary">
           Selamat Datang di <br />
-          <h1 class="heading-title">SMP NEGERI 2 BATURITI</h1>
+          <h1 class="heading-primary heading-title">SMP NEGERI 2 BATURITI</h1>
         </h1>
         <form action="#" method="post">
           <input
@@ -124,7 +129,7 @@
       <div class="container container-sambutan">
         <div class="principal">
           <div class="principal-text-box">
-            <h2 class="sambutan-heading-secondary">Sambutan Kepala Sekolah</h2>
+            <h2 class="heading-secondary">Sambutan Kepala Sekolah</h2>
             <p>
               <em>Om Swastyastu,</em>
             </p>
@@ -926,5 +931,6 @@
      </footer>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script defer src="slider.js"></script>
+    <script defer src="style.js"></script>
   </body>
 </html>

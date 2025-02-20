@@ -1,7 +1,246 @@
-/* BELOW 1344px (Smaller desktop) */
+/************************/
+/*BELOW 1344px (Smaller desktop) */
+/************************/
+
 @media (max-width: 84em) {
-  /* GENERAL */
+  html {
+    font-size: 80%;
+  }
   .hero-section {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .hero-text {
+    font-size: 1.6rem;
+  }
+
+  .header {
+    justify-content: none;
+  }
+}
+
+/* Breakpoints: Dibawah 1200px) */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+
+  .heading-primary {
+    font-size: 4rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .footer-description {
+    line-height: 1.8rem;
+  }
+  .menu-item {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
+
+/* Breakpoints: Dibawah (992px) (944px) Tablets*/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    max-width: 1140px;
+  }
+  .heading-primary {
+    font-size: 3rem;
+  }
+  .heading-secondary {
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999;
+  }
+
+  .nav-open .fa-bars {
+    display: none;
+  }
+
+  .nav-open .fa-xmark {
+    display: block;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .main-nav {
+    background-color: rgb(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+
+    /* 1) hide it visually */
+    opacity: 0;
+
+    /* 2) make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .main-nav li a {
+    display: block;
+  }
+
+  /* .navbar-right {
+    float: right !important;
+    margin-right: -15px;
+  } */
+
+  form input {
+    width: 40%;
+    min-height: 40px;
+    border-radius: 25px;
+  }
+
+  form button {
+    border-radius: 25px;
+    width: 10%;
+    height: 40px;
+    margin: 0 !important;
+    padding: 0 1.8rem;
+  }
+
+  /* sambutan */
+  .sambutan-section {
+    max-width: 100rem;
+  }
+
+  .principal-text-box p {
+    margin: 0 0 0.3rem;
+  }
+
+  /*berita-section */
+
+  .container-news-section {
+    max-width: 90rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+
+  .news-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 2rem;
+  }
+
+  .news-section .news-items {
+    margin-bottom: 50px;
+  }
+  .section-news-area .news-items .single-item {
+    margin-bottom: 1rem;
+  }
+
+  .section-news-area .news-content p {
+    font-size: 1rem;
+    margin: 0 0 15px;
+    line-height: 10px;
+  }
+
+  /* ekstra */
+  .container-ekstra {
+    max-width: 110rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+
+  .ekstra-item .item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ekstra-body-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+
+  .ekstra-item .item a {
+    font-size: 7.2rem;
+  }
+
+  /* PRESTASI */
+  /* PROFIL GURU */
+}
+
+/***************************/
+/* BELOW 704px ( smaller tablets)  */
+/**************************/
+
+@media (min-width: 768px) {
+}
+
+/* BELOW 544px (Phone)   */
+@media (max-width: 34em) {
+  .container .container-footer {
     max-width: 100%;
+    padding: 0 2.4rem;
+  }
+
+  .heading-selamat-datang .heading-title {
+    font-size: 2.4rem;
+  }
+
+  .title,
+  .heading-secondary,
+  .heading-ekstra,
+  .heading-prestasi,
+  .heading-guru {
+    font-size: 2.4rem;
+  }
+
+  .footer {
+    padding: 0 0 1.6rem 0;
+  }
+
+  .footer-logo {
+    height: 10rem;
+  }
+
+  .footer-description {
+    font-size: 1rem;
   }
 }

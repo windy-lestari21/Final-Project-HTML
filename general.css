@@ -194,7 +194,7 @@ body {
   align-items: center;
   /* font-size: 0.6rem; */
   padding-left: 0;
-  gap: 1rem;
+  /* gap: 1rem; */
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.05rem;
@@ -230,6 +230,23 @@ body {
 
 .dropdown__menu {
   background-color: #f0f8ff;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-mobile-nav .fa-solid {
+  /* height: 4.8rem; */
+  width: 4.8rem;
+  color: #333;
+}
+
+.fa-xmark {
+  display: none;
 }
 
 /* FOOTER */
