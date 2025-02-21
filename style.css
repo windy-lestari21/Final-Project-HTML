@@ -247,7 +247,7 @@ form button {
   padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
+  /* gap: 9.6rem; */
   align-items: center;
 }
 
@@ -744,8 +744,9 @@ a {
   margin-bottom: 1rem;
 }
 
-.prestasi-date {
+.prestasi-caption .prestasi-date {
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .prestasi-items .btn-theme.border {
@@ -951,4 +952,8 @@ a {
 
 .text-center {
   align-items: center !important;
+}
+
+.show {
+  display: block !important;
 }

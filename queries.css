@@ -64,6 +64,23 @@
     margin-bottom: 4rem;
   }
 
+  .nav-img {
+    display: flex;
+    gap: 0.8rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .logo {
+    height: 4rem;
+  }
+
+  .logo-text {
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
@@ -81,17 +98,34 @@
   .main-nav-list {
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
   }
 
-  .main-nav-link:link,
+  /* .dropdown {
+    display: flex;
+    align-items: center;
+  } */
+
+  .dropdown .main-nav-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .contacts {
+    border-top: 1px solid #e0e0e0;
+  }
+
+  /* .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
-  }
+  } */
 
   .main-nav {
-    background-color: rgb(255, 255, 255, 0.9);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(10px);
+    /* background-color: rgb(255, 255, 255, 0.9); */
+    /* -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px); */
     position: absolute;
     top: 0;
     left: 0;
@@ -144,18 +178,15 @@
   }
 
   /* sambutan */
-  .sambutan-section {
-    max-width: 100rem;
-  }
 
   .principal-text-box p {
     margin: 0 0 0.3rem;
+    font-size: 1.4rem;
   }
 
   /*berita-section */
 
   .container-news-section {
-    max-width: 90rem;
     padding: 0 3.2rem;
     margin: 0 auto;
   }
@@ -173,9 +204,11 @@
   .section-news-area .news-items .single-item {
     margin-bottom: 1rem;
   }
-
+  .news-section .news-content .sub-heading {
+    font-size: 1.6rem;
+  }
   .section-news-area .news-content p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin: 0 0 15px;
     line-height: 10px;
   }
@@ -203,14 +236,118 @@
   }
 
   /* PRESTASI */
+  .prestasi-section {
+    padding: 4.8rem 0 9.4rem 0;
+  }
+
+  .container-prestasi {
+    max-width: 80rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+
+  .prestasi-items {
+    /* display: grid; */
+    gap: 3.2rem;
+  }
+
+  .prestasi {
+    display: block;
+    row-gap: 3.2rem;
+    column-gap: 3rem;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  }
+
+  .prestasi-img {
+    display: block;
+    transition: all 0.5s;
+    width: 100%;
+  }
+
+  .prestasi-caption .prestasi-heading {
+    font-size: 2.4rem;
+  }
+
+  .prestasi-desc {
+    font-size: 1.6rem;
+  }
+
+  .read-more {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .prestasi-caption .prestasi-date {
+    color: #444;
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+  }
+
   /* PROFIL GURU */
+
+  /* FOOTER */
+  .container .container-footer {
+    max-width: 110rem;
+    padding: 0 3.2rem;
+  }
+
+  .footer-logo {
+    height: 10rem;
+  }
+
+  .sosmed li a {
+    font-size: 2.4rem;
+  }
 }
 
 /***************************/
 /* BELOW 704px ( smaller tablets)  */
 /**************************/
 
-@media (min-width: 768px) {
+@media (max-width: 44em) {
+  html {
+    font-size: 40%;
+  }
+
+  .container {
+    max-width: 1140px;
+  }
+  .heading-primary {
+    font-size: 4rem;
+  }
+  .heading-secondary {
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .logo {
+    height: 7rem;
+  }
+
+  .logo-text {
+    font-size: 3rem;
+  }
+
+  form input {
+    width: 50%;
+    min-height: 30px;
+    border-radius: 20px;
+  }
+
+  form button {
+    border-radius: 20px;
+    width: 16%;
+    height: 30px;
+  }
+  .principal {
+    font-size: 2.4rem;
+  }
+  .principal-text-box p {
+    font-size: 2rem;
+  }
 }
 
 /* BELOW 544px (Phone)   */

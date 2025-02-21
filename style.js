@@ -36,6 +36,31 @@ allLinks.forEach(function (link) {
   });
 });
 
+// DROPDOWN NAV
+const dropdownEl = document.querySelector(".dropdown");
+const menuEl = document.querySelector(".dropdown__menu");
+const triger = document.querySelector(".dropdown-open");
+
+triger.addEventListener("click", function (e) {
+  e.stopPropagation();
+
+  const parent = this.parentNode.parentNode;
+  const submenu = parent.children[1];
+
+  if (submenu) {
+    console.log(submenu);
+    submenu.classList.toggle("show");
+  }
+});
+
+dropdownEl.addEventListener("click", function () {
+  menuEl.classList.toggle("dropdown-open");
+});
+
+// const dropdownEl = document.querySelectorAll(".dropdown");
+// const menuEl = document.querySelector(".dropdown__menu");
+// const triger = document.querySelector(".dropdown-open");
+
 // make current year copyright
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
